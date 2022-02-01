@@ -35,7 +35,7 @@ module.exports = {
       ],
     }),
     new HtmlWebpackPlugin({
-      title: "Regional Rail",
+      title: "Delaware County Trailheads",
       template: path.resolve(__dirname, "./src/template_index.html"),
       filename: "index.html",
       chunks: ["index"],
