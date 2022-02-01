@@ -42,13 +42,17 @@
         </ol>
         <hr />
         <br />
-        <form action="">
-          <div>
-            <label for="emailaddress">Enter your email:</label>
-            <input type="text" name="emailaddress" id="emailaddress" />
-          </div>
-          <button class="button">Submit Votes</button>
-        </form>
+        <div id="form-wrapper">
+          <form id="email-form">
+            <div>
+              <label for="emailaddress">Enter your email:</label>
+              <input type="text" name="emailaddress" id="emailaddress" />
+            </div>
+          </form>
+          <button id="submit-button" class="button">Submit Votes</button>
+        </div>
+
+        <div id="help-text"></div>
       </div>
     </div>
   </body>
