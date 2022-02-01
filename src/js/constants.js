@@ -1,0 +1,3 @@
+let SELECTED_TRAILHEAD_IDS = [];
+
+export { SELECTED_TRAILHEAD_IDS };
