@@ -50,10 +50,23 @@ const layers = {
     source: "geojson-trailheads",
     paint: {
       "circle-radius": 5,
-      "circle-color": "green",
+      "circle-opacity": 0.8,
+      "circle-color": "white",
       "circle-stroke-color": "black",
       "circle-stroke-width": 2,
     },
+  },
+  selectedtrailheads: {
+    id: "selected-trailheads",
+    type: "circle",
+    source: "geojson-trailheads",
+    paint: {
+      "circle-radius": 10,
+      "circle-color": "yellow",
+      "circle-stroke-color": "black",
+      "circle-stroke-width": 2,
+    },
+    filter: ["==", "gid", "-1"],
   },
 };
 
