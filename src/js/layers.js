@@ -10,15 +10,27 @@ const layers = {
     },
     filter: ["==", "CNTY_NAME", "Delaware County"],
   },
-  trailsegments: {
-    id: "trailsegments",
+  existingtrailsegments: {
+    id: "existing-trail-segments",
     type: "line",
     source: "geojson-trail-segments",
+    filter: ["==", "status", "Existing"],
     paint: {
+      "line-color": "green",
+      "line-width": 10,
+      "line-opacity": 0.5,
+    },
+  },
+  futuretrailsegments: {
+    id: "future-trail-segments",
+    type: "line",
+    source: "geojson-trail-segments",
+    filter: ["!=", "status", "Existing"],
+    paint: {
+      "line-opacity": 0.5,
+      "line-dasharray": [1, 1],
       "line-color": [
         "case",
-        ["==", ["get", "status"], "Existing"],
-        "green",
         ["==", ["get", "status"], "Construction"],
         "teal",
         ["==", ["get", "status"], "Design"],
@@ -29,10 +41,9 @@ const layers = {
         "red",
         "black",
       ],
-      "line-width": 5,
+      "line-width": 2,
     },
   },
-
   trailheads: {
     id: "trailheads",
     type: "circle",
