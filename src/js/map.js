@@ -15,4 +15,7 @@ map.addControl(
   })
 );
 
+const nav = new mapboxgl.NavigationControl();
+map.addControl(nav, "bottom-left");
+
 export { map };
