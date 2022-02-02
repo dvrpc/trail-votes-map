@@ -8,15 +8,34 @@ body {
   bottom: 0;
   width: 100%;
 }
-#header {
+.floating-box {
   z-index: 1;
   position: absolute;
-  top: 10px;
-  left: 10px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.9);
-  max-width: 500px;
   box-shadow: 5px 10px 8px #888888;
+}
+#header {
+  top: 10px;
+  left: 10px;
+  max-width: 500px;
+}
+#legend {
+  bottom: 40px;
+  left: 10px;
+  max-width: 500px;
+}
+.legend-item {
+  display: flex;
+  justify-content: space-between;
+}
+.legend-item hr {
+  margin-left: 10px;
+  border: dashed 4px;
+  width: 40px;
+}
+#solid-border {
+  border: solid 8px;
 }
 p,
 label {

@@ -23,7 +23,7 @@
     />
 
     <div id="map">
-      <div id="header">
+      <div id="header" class="floating-box">
         <h1>Delaware County Trail Connections</h1>
         <hr />
         <p>
@@ -63,6 +63,29 @@
 
         <!-- <hr />
         <hr style="border: dashed 4px; width: 40px; color: red" /> -->
+      </div>
+      <div id="legend" class="floating-box">
+        <h3>Trail Type</h3>
+        <div class="legend-item solid-border">
+          <span>Existing</span>
+          <hr id="solid-border" style="color: green" />
+        </div>
+        <div class="legend-item">
+          <span>Construction</span>
+          <hr class="dashed" style="color: teal" />
+        </div>
+        <div class="legend-item">
+          <span>Design</span>
+          <hr style="color: blue" />
+        </div>
+        <div class="legend-item">
+          Potential
+          <hr style="color: orange" />
+        </div>
+        <div class="legend-item">
+          <div>Proposed</div>
+          <hr style="color: red" />
+        </div>
       </div>
     </div>
   </body>
