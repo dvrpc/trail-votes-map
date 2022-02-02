@@ -49,36 +49,4 @@ const click_on_trailheads = (map) => {
   });
 };
 
-// const hover_on_trail_segments = (map) => {
-//   ["existing-trail-segments", "future-trail-segments"].forEach((layername) => {
-//     map.on("mouseenter", layername, (e) => {
-//       let props = e.features[0].properties;
-//       let trailname = props.trail_name;
-//       let status = props.status;
-
-//       let message = `
-//           <h3>${trailname}</h3>
-//           <p>Status: ${status}</p>
-//         `;
-
-//       // create the popup and add it to the map
-//       let popup = new mapboxgl.Popup({
-//         closeButton: false,
-//         className: "popup-style",
-//       });
-
-//       popup.setLngLat(e.lngLat).setHTML(message).addTo(map);
-//     });
-
-//     map.on("mouseleave", layername, (e) => {
-//       let popup = document.getElementsByClassName("popup-style");
-
-//       // remove all elements with this class name
-//       if (popup.length) {
-//         popup[0].remove();
-//       }
-//     });
-//   });
-// };
-
 export { use_pointer, click_on_trailheads };

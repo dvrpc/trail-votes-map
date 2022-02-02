@@ -13,7 +13,6 @@ map.on("load", () => {
 
   use_pointer(map);
   click_on_trailheads(map);
-  // hover_on_trail_segments(map);
 
   assign_form_logic(map);
 });
