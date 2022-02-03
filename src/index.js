@@ -5,6 +5,7 @@ import { data_sources } from "./js/sources";
 import { layers } from "./js/layers";
 import { use_pointer, click_on_trailheads } from "./js/user_interaction";
 import { assign_form_logic } from "./js/form";
+import "./js/accordion";
 
 map.on("load", () => {
   for (const src in data_sources) map.addSource(src, data_sources[src]);
