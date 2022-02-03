@@ -24,26 +24,72 @@
 
     <div id="map">
       <div id="header" class="floating-box">
-        <h1>Delaware County Trail Connections</h1>
+        <img src="./img/web-map-survey_logos.png" alt="Logos" />
         <hr />
-        <p>
-          Vote for the trailheads that are most in need of on-street bicycle
-          facility connections!
-        </p>
-        <ol>
-          <li>
-            Click on (up to) three trailheads where you're most interested in
-            seeing connectivity improvements
-          </li>
-          <li>
-            If you click a trailhead by accident or want to change your vote,
-            click it again to unselect it
-          </li>
-          <li>Enter your email in the text box below</li>
-          <li>Click "Submit Votes" when you're finished</li>
-        </ol>
+        <h1>Which trailheads need on-street bicycle connections?</h1>
         <hr />
-        <br />
+
+        <div id="about" class="accordion">About this project</div>
+        <div class="panel">
+          <p>
+            DVRPC is working with the Delaware County Planning Department to
+            develop conceptual plans for bicycle network improvements that will
+            improve mobility across the county by tying local trailheads to
+            nearby neighborhood amenities with low-stress bike facilities.
+          </p>
+          <p>
+            We want your feedback to help us pick the locations for intitial
+            focus! Please use this map to vote for the three locations that are
+            most in need of on-street connectivity improvements for cyclists.
+          </p>
+        </div>
+
+        <div id="direction-accordion" class="accordion">
+          How do I use this map?
+        </div>
+        <div id="directions" class="panel">
+          <ol>
+            <li>
+              Click on (up to) three trailheads where you're most interested in
+              seeing connectivity improvements
+            </li>
+            <li>
+              If you click a trailhead by accident or want to change your vote,
+              click it again to unselect it
+            </li>
+            <li>Enter your email in the text box below</li>
+            <li>Click "Submit Votes" when you're finished</li>
+          </ol>
+        </div>
+
+        <div class="accordion">How do you define "need"?</div>
+        <div id="need-definition" class="panel">
+          <p>
+            "Trailheads in need of on-street-bicycle connections" can be defined
+            in a number of ways:
+          </p>
+          <ul>
+            <li>Trailheads that are popular and used a lot by cyclists now.</li>
+            <li>
+              Trailheads that are cut off from the community by streets that
+              don't feel safe for cyclists to use.
+            </li>
+            <li>
+              Trailheads that, with on-street enhancements, would see more
+              bicycle use for commuting or recreation.
+            </li>
+            <li>
+              Trailheads that, with on-street improvements, could connect to
+              other nearby trailheads or on-street bicycle routes.
+            </li>
+            <li>
+              Trailheads that could be better connected to schools, community
+              centers, parks, and other neighborhood facilities.
+            </li>
+          </ul>
+        </div>
+
+        <hr />
         <div id="form-wrapper">
           <form id="email-form">
             <div>
@@ -60,32 +106,15 @@
         </div>
 
         <div id="help-text"></div>
-
-        <!-- <hr />
-        <hr style="border: dashed 4px; width: 40px; color: red" /> -->
       </div>
+
       <div id="legend" class="floating-box">
-        <h3>Trail Type</h3>
-        <div class="legend-item solid-border">
-          <span>Existing</span>
-          <hr id="solid-border" style="color: green" />
-        </div>
-        <div class="legend-item">
-          <span>Construction</span>
-          <hr class="dashed" style="color: teal" />
-        </div>
-        <div class="legend-item">
-          <span>Design</span>
-          <hr style="color: blue" />
-        </div>
-        <div class="legend-item">
-          Potential
-          <hr style="color: orange" />
-        </div>
-        <div class="legend-item">
-          <div>Proposed</div>
-          <hr style="color: red" />
-        </div>
+        <img src="./img/web-map-survey_legend.png" alt="Legend" />
+      </div>
+
+      <div id="thanks">
+        <h1>Thank you for voting!</h1>
+        <h3>Your input and time are greatly appreciated.</h3>
       </div>
     </div>
   </body>
