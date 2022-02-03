@@ -46,8 +46,8 @@ const assign_form_logic = (map) => {
         })
           .then((response) => response.json())
           .then((data) => {
-            help_text.innerText = "Thank you for your input!";
-            help_text.style.color = "black";
+            help_text.innerText = "";
+            document.getElementById("thanks").style.display = "flex";
             map.setFilter("selected-trailheads", ["in", "gid", "-1"]);
             SELECTED_TRAILHEAD_IDS.length = 0;
           })
