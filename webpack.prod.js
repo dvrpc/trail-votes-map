@@ -18,7 +18,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, "./build"),
+    path: path.resolve(__dirname, "/srv/webmaps/delco_bike_map"),
     filename: "[name].bundle.js",
   },
 
